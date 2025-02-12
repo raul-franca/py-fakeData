@@ -85,7 +85,7 @@ def generate_fake_data(n):
         })
     return data
 
-def save_to_json_file(data, filename="fake_data_medicos.json"):
+def save_to_json_file(data, filename="data/fake_data_medicos.json"):
     with open(filename, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
     print(f"Arquivo {filename} gerado com sucesso!")
